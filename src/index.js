@@ -3,13 +3,13 @@ let nomeHeroi = "Légolas da Mira Torta";
 let nivelHeroi = "";
 let saldoDeVitorias = calculadora(100, 19);
 
-// função que calcula saldo de vitórias
+// Função que calcula saldo de vitórias (vitória-derrotas).
 function calculadora(numVitorias, numDerrotas){
     somatorio = numVitorias - numDerrotas;
     return somatorio;
 }
 
-// estrutura de escolha que seleciona o rank do herói com base no saldo de vitórias
+// Estrutura de escolha que seleciona o rank do herói com base no saldo de vitórias.
 switch(true){
     case saldoDeVitorias <= 10:
         nivelHeroi = "Ferro";
@@ -43,5 +43,5 @@ switch(true){
         nivelHeroi = "Não foi possível calcular o seu Rank atual.";
 }
 
-// resultado
+// resultado final
 console.log("O herói de nome " + nomeHeroi + " tem um saldo de " + saldoDeVitorias + " vitórias e está no rank " + nivelHeroi +".");
